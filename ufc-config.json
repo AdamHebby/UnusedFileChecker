@@ -1,0 +1,33 @@
+{
+   /* UnusedFileChecker Config File */
+
+   /* Debug mode - takes longer but does a deep search for files */
+   "debug_mode": true,
+   /* Directory to search for unused files - supports the use of ~  */
+   "directory": "",
+   /* Save the state of the program to continue later */
+   "save_state": true,
+   /* Save the state of the program after every $$ files */
+   "save_every_files": 50,
+   /* File to output unused files to */
+   "output_file": "FC_output.txt",
+   /* File to save the state of the application to */
+   "savestate_file": "FC_SaveState.txt",
+   /* Ignore files within these directories, uses regex */
+   "ignore_regexes": [
+      "/^amp\/.*/",
+      "/^bin\/.*/"
+   ],
+   /* Search in these directories - NOT A REGEX. EG: "somedirectory/" */
+   "search_only": [
+
+   ],
+   /* If you have redirects, put their values in here to remove them
+      For example, if you redirect /httpdocs/ to /static/ then you'd
+      place them here.
+    */
+   "replace_directories": {
+      "httpdocs/": "",
+      "static/": ""
+   }
+}
