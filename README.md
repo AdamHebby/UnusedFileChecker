@@ -27,7 +27,7 @@ Debug Mode on. This takes longer but shows files which weren't found in the firs
 
 Saves the programs progress regulary which can later be loaded to pickup right where you left off
 ```
---saveState=true
+--savestate=true
 ```
 
 Shows some helpful information

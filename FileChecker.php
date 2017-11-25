@@ -1,7 +1,7 @@
 <?php
 require 'FileCheckerClass.php';
 
-$opts = array('debug::', 'saveState::', 'help::');
+$opts = array('debug::', 'savestate::', 'help::');
 $opts = getopt('', $opts);
 
 echo "###########################\n";
@@ -12,7 +12,7 @@ if (isset($opts['help'])) {
 	echo "--debug=true \n\tDebug Mode on. This takes longer but shows files \n";
 	echo "\twhich weren't found in the first run, it then searches \n";
 	echo "\tpurely for the filenames instead of the full path \n\n";
-	echo "--saveState=true \n\tSaves the programs progress regularly which \n";
+	echo "--savestate=true \n\tSaves the programs progress regularly which \n";
 	echo "\tcan later be loaded to pickup right where you left off\n\n";
 	exit();
 }
@@ -29,7 +29,7 @@ if (isset($argv[1]) && $argv[1] == 1) {
 // Save State mode
 if (isset($argv[1]) && $argv[1] == 1) {
 	$saveState = true;
-} elseif (isset($opts['saveState']) && $opts['saveState'] === "true") {
+} elseif (isset($opts['savestate']) && $opts['savestate'] === "true") {
 	$saveState = true;
 } else {
 	$saveState = false;

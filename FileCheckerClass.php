@@ -43,8 +43,8 @@ class UnusedFileChecker {
         $this->debug      = ($debugMode !== NULL) 
             ? $debugMode 
             : $this->config["debug_mode"];
-        $this->debug      = ($debugMode !== NULL) 
-            ? $debugMode 
+        $this->saveState      = ($saveState !== NULL) 
+            ? $saveState 
             : $this->config["save_state"];
         $this->homeDir    = $this->getHomeDirectory();
         $this->searchDir  = $this->searchIn;
